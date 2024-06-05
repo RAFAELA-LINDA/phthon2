@@ -53,11 +53,16 @@ def continua():
     ##print(x)
     ##forca(x)
     ##jogar = continua()
-forca(4)
+forca(8)
 
 
 def sorteiapalavra ():
-    lista=["amor","paz","prosperidade","ajuda","salvacao"]
+    lista=["amor","paz","prosperidade","ajuda","salvação"]
     return random.choice(lista)
 import random 
 print(sorteiapalavra())
+
+def apresentapalavra(letras,palavras):
+    npalavra="_"*len("paz")
+    return npalavra 
+print (apresentapalavra("AB","paz"))
