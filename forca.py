@@ -1,3 +1,4 @@
+
 def forca(tentativa):
     f1 = "  +--------+  "
     f2 = "  |           "
@@ -8,7 +9,7 @@ def forca(tentativa):
     f7 = "__|___________"
 
     if tentativa>= 1:
-        f2="  |         |"
+        f2="  |         | "
     if tentativa>= 2:
         f3="  |         o "
     if tentativa>= 3:
@@ -46,6 +47,22 @@ def continua():
         else:
             print("Digite S ou N ")
     return acabou
+
+def apresentapalavra(letras,palavras):
+    npalavra="_ "*len(palavras)
+    for l in range (0,len(letras)):
+        print(letras[l])
+        for p in range (0, len(palavras)):
+            ##print(palavras[p])
+            if letras[l]==palavras[p]:
+              print(letras[l])
+              print(l)
+              print(p)
+    return npalavra
+
+def sorteiapalavra ():
+    lista = ["amor","paz","prosperidade","ajuda","salvação"]
+    return random.choice (lista)
      
 ##jogar = True
 ##x=0
@@ -53,16 +70,10 @@ def continua():
     ##print(x)
     ##forca(x)
     ##jogar = continua()
-forca(8)
+forca(0)
 
 
-def sorteiapalavra ():
-    lista=["amor","paz","prosperidade","ajuda","salvação"]
-    return random.choice(lista)
-import random 
+import random
 print(sorteiapalavra())
 
-def apresentapalavra(letras,palavras):
-    npalavra="_"*len("paz")
-    return npalavra 
-print (apresentapalavra("AB","paz"))
+print(apresentapalavra("abx","amor"))
