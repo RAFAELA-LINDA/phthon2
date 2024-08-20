@@ -2,10 +2,9 @@ def retangulo(tipo_retorno, largura, altura):
     if tipo_retorno == "Area":
         return largura * altura
     elif tipo_retorno == "Perimetro":
-        return 2 * (largura + altura)
-    else:
-        return "Tipo de retorno inválido"
-
+        r= 2 * (largura + altura)
+        return r
+        
 def circulo(tipo_retorno, raio):
     pi = 3.14
     if tipo_retorno == "Area":
