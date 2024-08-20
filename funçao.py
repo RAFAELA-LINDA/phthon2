@@ -1,4 +1,3 @@
- #Função para calcular a área ou o perímetro de um retângulo
 def retangulo(tipo_retorno, largura, altura):
     if tipo_retorno == "Area":
         return largura * altura
@@ -7,7 +6,6 @@ def retangulo(tipo_retorno, largura, altura):
     else:
         return "Tipo de retorno inválido"
 
-# Função para calcular a área ou o perímetro de um círculo
 def circulo(tipo_retorno, raio):
     pi = 3.14
     if tipo_retorno == "Area":
@@ -17,7 +15,6 @@ def circulo(tipo_retorno, raio):
     else:
         return "Tipo de retorno inválido"
 
-# Função para verificar os resultados dos cálculos do retângulo e do círculo
 def verificar_resultados(largura, altura, raio):
     area_retangulo = retangulo("Area", largura, altura)
     perimetro_retangulo = retangulo("Perimetro", largura, altura)
@@ -27,6 +24,5 @@ def verificar_resultados(largura, altura, raio):
     print(f"Retângulo: Área = {area_retangulo}, Perímetro = {perimetro_retangulo}")
     print(f"Círculo: Área = {area_circulo}, Perímetro = {perimetro_circulo}")
 
-# Passando os parâmetros para a função verificar_resultados
 verificar_resultados(largura=8, altura=12, raio=5)
 
